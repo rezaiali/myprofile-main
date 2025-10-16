@@ -1,0 +1,192 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #192a56;
+    padding: 5px;
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid #e1b12c;
+  }
+  
+  .prelogo {
+    color: white;
+    /* font-size: 1.5rem; */
+    font-weight: bold;
+  }
+  
+  .logo {
+    margin-top:18%;
+    float:left;
+    display:grid;
+    /* width:75%; */
+    
+    position:absolute;
+  }
+
+ 
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    padding-top: 5px;
+    margin: 0 25px;
+    font-weight: 500;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.75s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #f9a825;
+    font-weight: 500;
+  }
+  
+  /* Responsive Menu */
+  .toggle-menu {
+    display: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .drop-btn {
+    cursor: pointer;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #192a56;
+    border-bottom: 2px solid #e1b12c;
+    padding-top: 27px;
+   }
+
+  /* Content Styles */
+  .content {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .drop-btn::after {
+    content: " ▼"; /* Adds a dropdown arrow after the text */
+    font-size: 0.8rem;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+    .dropdown {
+      position: relative;
+      margin: 5px;
+       /* Ensures dropdown-menu is positioned relative to this element */
+    }
+     
+    .dropdown:hover .drop-btn::after {
+      transform: rotate(180deg); /* Rotate the arrow when hovered */
+    }
+    
+  
+
+    /********/
+    .profile img {
+      margin: 45px auto;
+      display: block;
+      width: 420px;
+      border: 8px solid #2c2f3f;
+    }
+
+    .toggle-dropdown{
+      display: none;
+    }
+
+    .dropdown-sm-menu{
+      display: none;
+    }
+    
+  /* Media Query for Mobile */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      width: 200px;
+      border-radius: 5px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+   
+    .toggle-menu {
+      color: white;
+      display: block;
+        
+    }
+    .toggle-menu a {
+      text-decoration: none;
+      color: white;
+    }
+  
+   .nav-linksMedia {
+      display: none;
+      position: absolute;
+      background-color: #192a56;
+      border-bottom: 2px solid #e1b12c;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-top: 5px;
+      padding-bottom: 20px;
+      margin-top: 1%;
+      right: 1px;
+      border-radius: 5px;
+      list-style: none;
+      font-size: 1.15rem;
+    }
+
+    .nav-linksMedia a:hover{
+      color: rgb(226, 71, 71);
+    }
+
+    .submenu{
+      color: rgb(226, 71, 71);
+    }
+    .toggle-menu:hover .nav-linksMedia{
+      display: block;
+             
+    }
+    .drop-btn::after {
+      content: none;
+      }
+    
+   
+     .dropdown-sm-menu{
+      display: block;
+    }
+
+    
+    .logo {
+      margin-top:45px;
+      float:left;
+      display:grid;
+      width:80px;
+      position:absolute;
+    }
+       
+  }  
+    
+ 
+    
+    
+  

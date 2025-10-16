@@ -1,0 +1,21 @@
+.Tcontainer {
+    display: flex;
+    
+    background-color: #192a56;
+    border-bottom: 2px solid #e1b12c;;  
+}
+.Trow {
+
+    flex: 0 1 auto;
+    flex-direction: row;
+    padding-right: 30px;
+    background-color: #192a56;
+   
+    
+}
+.Tlogo{
+    flex: 2 1 auto;
+    flex-direction: row;
+    
+    color:white
+}

@@ -1,0 +1,147 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .calculator {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    padding: 20px;
+  }
+  
+  .display {
+    background: #222;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .historyDisplay{
+    text-align: right;
+    padding: 2px;
+  }
+  .visible{
+    display: block;
+  }
+  .invisible{
+    display: none;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .btn {
+    background: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn_big {
+    background: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    grid-column: span 2;
+  }
+  
+  .btn:hover {
+    background: #d6d6d6;
+  }
+  
+  .operator {
+    background: #f9a825;
+    color: white;
+  }
+  
+  .operator:hover {
+    background: #d68c00;
+  }
+  
+  .equal {
+    background: #4caf50;
+    color: white;
+    grid-column: span 3;
+  }
+  
+  .equal:hover {
+    background: #388e3c;
+  }
+  @media (max-width: 768px) {
+    .calculator {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 250px;
+      max-height: 370px;
+      padding: 3px;
+      margin-left: 25px;
+    }
+    .display {
+      background: #222;
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 10px;
+      top: 15px;
+      text-align: right;
+      border-radius: 5px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3px;
+      margin-top: 0px;
+    }
+    .btn {
+      background: #e0e0e0;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 1.0rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      height: 50px;
+    }
+    .operator {
+      background: #f9a825;
+      color: white;
+    }
+    .btn_big {
+      background: #e0e0e0;
+      border: none;
+      border-radius: 5px;
+      padding: 3px;
+      font-size: 1.0rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      grid-column: span 2;
+      height: 50px;
+    }
+    .equal {
+      background: #4caf50;
+      color: white;
+      grid-column: span 3;
+    }
+  }
