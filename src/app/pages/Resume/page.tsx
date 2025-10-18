@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import styles from "./timeline.module.css";
+import styles from "../../styles/timeline.module.css";
 
 type Experience = {
   title: string;
