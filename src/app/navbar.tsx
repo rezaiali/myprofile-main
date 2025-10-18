@@ -14,19 +14,19 @@ export default function NavBar(props:props) {
          <>
       
         <nav className="navbar"  >
-        <div className="prelogo "></div>
+        <div className="prelogo ">Ali Rezai</div>
         <div className="logo">
         <img src={props.imgurl} alt="" width={`200px`} height={`200px`}
-         className="img-fluid rounded-circle"  /></div>
+         className="img-fluid rounded-circle img-shadow"  /></div>
 
          
         <ul className="nav-links">
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="pages/Resume">Resume</Link></li>
+          <li><Link href="/pages/Home">Home</Link></li>
+          <li><Link href="/pages/Resume">Resume</Link></li>
           <li className="dropdown">
             <a href="#" className="drop-btn">Projects</a>
                <ul className="dropdown-menu">
-                 <li><Link href="pages/Calculator">Calculator</Link></li>
+                 <li><Link href="./pages/Calculator">Calculator</Link></li>
                  <li><a href="#seo">Other</a></li>
                  <li><a href="#marketing">Another</a></li>
               </ul>
@@ -38,7 +38,7 @@ export default function NavBar(props:props) {
         <div className="toggle-menu">
         <a href="#" className="drop-btn">&nbsp; ☰&nbsp;&nbsp;</a>
         <ul className="nav-linksMedia">
-                  <li><Link href="/">Home</Link></li>
+                  <li><Link href="pages/Home">Home</Link></li>
                   <li><Link href="pages/Resume">Resume</Link></li>
                   <li className="sub-menu">
                   <a className="sub-menu">Projects</a>

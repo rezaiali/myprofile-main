@@ -15,10 +15,15 @@
   
   .prelogo {
     color: white;
-    /* font-size: 1.5rem; */
+    font-size: 2.5rem;
     font-weight: bold;
+    margin-left: 55px;
+    font-family: fantasy;
   }
-  
+  .img-shadow {
+       box-shadow: 0 24px 120px rgb(3, 7, 19);
+       border: 2px solid rgba(238, 236, 103, 0.7);
+  }
   .logo {
     margin-top:18%;
     float:left;
