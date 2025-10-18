@@ -1,0 +1,242 @@
+.timelineSection {
+  min-height: 100vh;
+  padding: 4rem 1rem 6rem;
+  background: linear-gradient(180deg, rgba(15, 18, 36, 0.95), rgba(9, 11, 23, 0.85));
+  color: #f5f7fa;
+}
+
+.inner {
+  width: min(92%, 1160px);
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+}
+
+.sectionSubtitle {
+  text-align: center;
+  color: rgba(231, 235, 246, 0.78);
+  max-width: 52rem;
+  margin: 0 auto 3rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.6;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 0 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 4px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, rgba(82, 153, 255, 0.9), rgba(134, 94, 242, 0.9));
+  border-radius: 999px;
+}
+
+.timelineItem {
+  position: relative;
+  width: 50%;
+  padding: 2.5rem 3rem;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(64px) scale(0.98);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.timelineItem::after {
+  content: "";
+  position: absolute;
+  top: 3.5rem;
+  width: 60px;
+  height: 2px;
+  background: rgba(140, 182, 255, 0.8);
+}
+
+.left::after {
+  right: -12px;
+}
+
+.right::after {
+  left: -12px;
+}
+
+.marker {
+  position: absolute;
+  top: 1.5rem;
+  z-index: 2;
+}
+
+.left .marker {
+  right: -88px;
+}
+
+.right .marker {
+  left: -88px;
+}
+
+.circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.95), rgba(105, 154, 255, 0.92));
+  border: 5px solid rgba(24, 36, 79, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0b1533;
+  text-align: center;
+  padding: 0.5rem;
+  box-shadow: 0 20px 40px rgba(38, 82, 163, 0.35);
+}
+
+.content {
+  position: relative;
+  background: rgba(16, 22, 47, 0.9);
+  border-radius: 16px;
+  padding: 1.75rem 1.75rem 1.75rem;
+  box-shadow: 0 24px 60px rgba(8, 15, 35, 0.45);
+  border: 1px solid rgba(103, 142, 238, 0.25);
+  max-width: 540px;
+  text-align: left;
+}
+
+.left .content {
+  margin-left: auto;
+}
+
+.right .content {
+  margin-right: auto;
+}
+
+.role {
+  font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: #fdfdfd;
+  text-align: center;
+}
+
+.meta {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: rgba(181, 201, 246, 0.95);
+  margin-bottom: 1rem;
+}
+
+.details {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.65rem;
+  color: rgba(228, 235, 255, 0.9);
+  line-height: 1.6;
+}
+
+.details li {
+  position: relative;
+}
+
+.details li::marker {
+  color: rgba(130, 168, 255, 0.9);
+}
+
+@media (max-width: 1024px) {
+  .timelineItem {
+    padding: 2rem 2.5rem;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 24px;
+    margin: 0;
+  }
+
+  .timelineItem,
+  .left,
+  .right {
+    width: 100%;
+    left: 0;
+    padding: 2rem 1.5rem 2rem 4.5rem;
+    text-align: left;
+  }
+
+  .left .content,
+  .right .content {
+    margin: 0;
+  }
+
+  .timelineItem::after,
+  .left::after,
+  .right::after {
+    left: 34px;
+    right: auto;
+    width: 30px;
+  }
+
+  .marker,
+  .left .marker,
+  .right .marker {
+    left: -5px;
+    right: auto;
+  }
+
+  .circle {
+    width: 88px;
+    height: 88px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timelineSection {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .timelineItem {
+    padding: 1.75rem 1rem 1.75rem 4rem;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+    font-size: 0.75rem;
+  }
+
+  .content {
+    padding: 1.5rem 1.25rem;
+  }
+}
