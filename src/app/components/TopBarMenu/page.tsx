@@ -1,4 +1,4 @@
-import "@/app/styles/TopbarMenu.css"
+import "@/app/styles/TopBarMenu.css"
 
 export default function TopBarMenu () {
     return (

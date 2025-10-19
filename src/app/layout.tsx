@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import 'bootstrap/dist/css/bootstrap.css';
+import './styles/nav.css';
+import './styles/calculator.css';
+import './styles/TopBarMenu.css';
 import NavBar from "./navbar";
 // import TopBar from "./components/TopBarMenu/page"
 

@@ -45,6 +45,7 @@
   color: antiquewhite;
   min-height: 100vh;
   padding: 4rem 1rem 6rem;
+  width: 100%;
 }
 .home-text {
   color: rgba(231, 235, 246, 0.9);
