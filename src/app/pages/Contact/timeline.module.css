@@ -1,14 +1,8 @@
 .timelineSection {
-  height: 1000vh;
- 
+  min-height: 100vh;
   padding: 4rem 1rem 6rem;
-  background: linear-gradient(180deg,rgba(15,18,36,.95),rgba(9,11,23,.85));
+  background: linear-gradient(180deg, rgba(15, 18, 36, 0.95), rgba(9, 11, 23, 0.85));
   color: #f5f7fa;
-  position: relative;
-  width: 100%;
-  top: 580vh;
- 
- 
 }
 
 .inner {
